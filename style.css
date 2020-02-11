@@ -24,8 +24,8 @@ header {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.lista li {
-  width: 90px;
+.lista li:nth-child(2) {
+  padding-left: 20px;
 }
 .lista a {
   text-decoration: none;
@@ -44,4 +44,20 @@ main {
   color: #ffffff;
   font-size: 30px;
   font-weight: bold;
+}
+
+@media all and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header img {
+    margin-bottom: 20px;
+  }
+
+  main {
+    font-size: 40px;
+  }
 }
